@@ -1,0 +1,24 @@
+{
+  "name": "rapidsmsng/sms-php-sdk",
+  "description": "Rapid SMS PHP SDK is built for Rapid SMS - Bulk SMS Application",
+  "type": "library",
+  "license": "MIT",
+  "version": "0.1.0",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Kenneth Onah",
+      "email": "kenneth@rapidsmsng.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "RapidSMS\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.2",
+    "ext-curl": "*",
+    "ext-json": "*"
+  }
+}
