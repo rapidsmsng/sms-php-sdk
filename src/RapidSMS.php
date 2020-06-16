@@ -41,7 +41,6 @@ class RapidSMS
          * despite what the PHP documentation suggests: cUrl will turn it into a
          * multipart form post, which is not supported:
          */
-
         $ch = curl_init( );
         curl_setopt ( $ch, CURLOPT_URL, $url);
         curl_setopt ( $ch, CURLOPT_POST, 1);

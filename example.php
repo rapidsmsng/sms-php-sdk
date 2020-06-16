@@ -1,6 +1,6 @@
 <?php
 
-/* Send an SMS using Rapid SMS. You can run this file 3 different ways:
+/* Send an SMS using Rapid SMS API. You can run this file 3 different ways:
  *
  * 1. Save it as example.php and at the command line, run
  *         php example.php
@@ -25,11 +25,11 @@ use RapidSMS\RapidSMS;
 $apiKey = 'YWRtaW46YWRtaW4ucGFzc3dvcmQ=';
 
 
-// Step 3: Change the from number below. It can be a valid phone number or a String
-$from = '8801721000000';
+// Step 3: Change to your Sender ID (max 10 characters). Submit Sender ID for approval from here https://rapidsmsng.com/user/sms/sender-id-management
+$from = 'RapidSMSNG';
 
-// Step 4: the number we are sending to - Any phone number
-$destination = '8801810000000';
+// Step 4: The number we are sending to - Any phone number
+$destination = '08132790865';
 
 // Step 5: Replace your URL like https://rapidsmsng.com/sms/api
 // <sms/api> portion is mandatory.
@@ -37,7 +37,7 @@ $destination = '8801810000000';
 $url = 'https://rapidsmsng.com/sms/api';
 
 // the sms body
-$sms = 'Test message from Rapid SMS';
+$sms = 'Test message from Rapid SMS API';
 
 // unicode sms
 $unicode = 0; //For Plain Message

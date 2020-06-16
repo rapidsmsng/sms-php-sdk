@@ -47,20 +47,20 @@ $apiKey = 'YWRtaW46YWRtaW4ucGFzc3dvcmQ=';
 ```
 
 ### Step 3:
-Change the from number below. It can be a valid phone number or a String
+Change to your Sender ID. Submit Sender ID for approval from here https://rapidsmsng.com/user/sms/sender-id-management
 ```php
-$from = '8801721000000';
+$from = 'RapidSMSNG';
 ```
 
 ### Step 4:
 the number we are sending to - Any phone number
 ```php
-$destination = '8801810000000';
+$destination = '08028333008';
 ```
 
 For multiple number please use Comma (,) after every single number.
 ```php
-$destination = '8801810000000,8801721000000,880167000000,01913000000';
+$destination = '08028333008,09054036811,09087040398';
 ```
 You can insert maximum 100 numbers using comma separated string in single api request.
 
@@ -84,7 +84,7 @@ $unicode = '1'; //For Unicode message
 
 // Schedule SMS
 ```php
-$scheduleDate = '09/17/2018 10:20 AM'; //Date like this format: m/d/Y h:i A
+$scheduleDate = '05/17/2020 10:20 AM'; //Date like this format: m/d/Y h:i A
 ```
 
 // Create Plain/text SMS Body for request
@@ -149,23 +149,25 @@ Rapid SMS API return response in `json` format, like:
 {"code": "ok","message": "Successfully Send"}
 ```
 
+## Delivery Reports
+Pushing delivery reports to an endpoint you specify is coming soon
+
 ## Status Code
 
 | Status | Message |
 | --- | --- |
-| `ok` | Successfully Send |
+| `ok` | Successfully queued |
 | `100` | Bad gateway requested |
 | `101` | Wrong action |
 | `102` | Authentication failed |
 | `103` | Invalid phone number |
 | `104` | Phone coverage not active |
 | `105` | Insufficient balance |
-| `106` | Invalid Sender ID |
-| `107` | Invalid SMS Type |
-| `108` | SMS Gateway not active |
-| `109` | Invalid Schedule Time |
-| `110` | Media url required |
-| `111` | SMS contain spam word. Wait for approval |
+| `106` | Invalid sender id |
+| `107` | Invalid SMS type |
+| `108` | SMS gateway not active |
+| `109` | Invalid schedule time |
+| `110` | SMS contain spam word. Pending approval |
 
 ## Authors
 
