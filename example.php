@@ -22,7 +22,7 @@ use RapidSMS\RapidSMS;
 
 
 // Step 2: Set your API_KEY you got from https://rapidsmsng.com/sms-api/info
-$apiKey = 'YWRtaW46YWRtaW4ucGFzc3dvcmQ=';
+$apiKey = 'a3l0am5pd3JodWxwQnhCbE9nYkM=';
 
 
 // Step 3: Change to your Sender ID (max 10 characters). Submit Sender ID for approval from here https://rapidsmsng.com/user/sms/sender-id-management
@@ -59,19 +59,21 @@ $client = new RapidSMS();
 // Step 7: Send SMS
 $response = $client->sendSms($url, $smsBody);
 
-print_r($response);
-
-
-// Step 8: Get Response
-$response = json_decode($response);
-
 // Display a confirmation message on the screen
-echo 'Message: ' . $response->message;
+echo 'Message: ' . PHP_EOL;
+var_dump(json_decode($response));
 
 
 //Step 9: Get your inbox
 $inbox = $client->getInbox($apiKey, $url);
 
+// Display a confirmation message on the screen
+echo 'Inbox: ' . PHP_EOL;
+var_dump(json_decode($inbox));
+
 //Step 10: Get your account balance
 $balance = $client->checkBalance($apiKey, $url);
 
+// Display a confirmation message on the screen
+echo 'Balance: ' . PHP_EOL;
+var_dump(json_decode($balance));
