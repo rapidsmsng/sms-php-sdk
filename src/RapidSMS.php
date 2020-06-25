@@ -47,6 +47,9 @@ class RapidSMS
         curl_setopt ( $ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt ( $ch, CURLOPT_POSTFIELDS, $postBody);
 
+        curl_setopt ( $ch, CURLOPT_SSL_VERIFYPEER, 1);
+        curl_setopt ( $ch, CURLOPT_SSL_VERIFYHOST, 2);
+
         // Allowing cUrl functions 20 second to execute
         curl_setopt ( $ch, CURLOPT_TIMEOUT, 20 );
 
