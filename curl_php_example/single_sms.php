@@ -4,12 +4,12 @@
 
 $apiKey = 'a3l0am5pd3JodWxwQnhCbE9nYkM=';
 
-// Step 2: Change the from number below. It can be a valid phone number or a String
-$from = '8801721000000';
+// Step 2: Change to your Sender ID. Submit Sender ID for approval from here https://rapidsmsng.com/user/sms/sender-id-management
+$from = 'RapidSMSNG';
 
 // Step 3: the number we are sending to - Any phone number.
 // You must have to insert country code at beginning of the number
-$destination = '8801810000000';
+$destination = '08028333008';
 
 // Step 4: Replace your URL with https://rapidsmsng.com/sms/api
 // <sms/api> is mandatory.
